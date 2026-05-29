@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my GitHub Pages website!</p>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
     <title>EvoCoex Lab - Raquel F. P. Costa</title>
     <style>
         body {
@@ -42,22 +31,40 @@
             object-fit: cover;
             float: right;
             margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .header-section {
+            overflow: hidden; /* This prevents text from being cut off by floated image */
+            margin-bottom: 20px;
+        }
+        .clear {
+            clear: both;
+        }
+        img.full-width {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Profile Image -->
-        <img src="images/profile.jpg" alt="Raquel Costa" class="profile-img">
+        <img src="images/Raquel Costa.png" alt="Raquel Costa" class="profile-img">
         
         <!-- Main Title -->
-        <h1>EvoCoex Lab</h1>
-        <h2>Evolution and Coexistence Lab</h2>
-        <p><strong>Raquel F. P. Costa, PhD</strong><br>
-        Program-Specific Assistant Professor<br>
-        Graduate School of Education and Human Development<br>
-        Nagoya University</p>
+        <div class="header-section">
+            <h1>EvoCoex Lab</h1>
+            <h2>Evolution and Coexistence Lab</h2>
+            <p><strong>Raquel F. P. Costa, PhD</strong><br>
+            Program-Specific Assistant Professor<br>
+            Graduate School of Education and Human Development<br>
+            Nagoya University</p>
+        </div>
         
+        <div class="clear"></div>
         <hr>
         
         <!-- Research Section -->
@@ -76,20 +83,18 @@
         evolutionary roots of human communication.</p>
         
         <!-- Add a lab photo -->
-        <img src="images/lab-photo.jpg" alt="Lab team at work" style="width:100%; max-width:600px;">
+        <img src="images/2023 Gorilla Raquel Costa.jpg" alt="Lab team at work" class="full-width">
         
         <hr>
         
         <!-- Contact Section -->
         <h2>Contact</h2>
-        <p>Email: pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp<br>
+        <p>Email: pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp</p>
         <p>Nagoya University Institute for Advanced Research</p>
-<p>Graduate School of Education and Human Development</p>
-<p>Furo-cho, Chikusa-ku, Nagoya, AICHI 464-8601 Japan</p>
-        Uni page: https://www2.educa.nagoya-u.ac.jp/staff/pereira-costa-raquel-filomena/</p>
-        T-Gex page: https://www.t-gex.nagoya-u.ac.jp/member/3984-2.html
-        
+        <p>Graduate School of Education and Human Development</p>
+        <p>Furo-cho, Chikusa-ku, Nagoya, AICHI 464-8601 Japan</p>
+        <p>Uni page: <a href="https://www2.educa.nagoya-u.ac.jp/staff/pereira-costa-raquel-filomena/">https://www2.educa.nagoya-u.ac.jp/staff/pereira-costa-raquel-filomena/</a></p>
+        <p>T-GEx page: <a href="https://www.t-gex.nagoya-u.ac.jp/member/3984-2.html">https://www.t-gex.nagoya-u.ac.jp/member/3984-2.html</a></p>
     </div>
 </body>
-    <img src="images/your-image-name.jpg" alt="Description of image" width="500">
 </html>
