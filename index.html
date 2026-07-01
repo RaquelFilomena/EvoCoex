@@ -9,24 +9,25 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f1f8e9; /* Light green background */
         }
         .container {
             background: white;
             padding: 30px;
             border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
         }
         h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
+            color: #1b5e20; /* Dark green */
+            border-bottom: 3px solid #4caf50; /* Medium green accent */
             padding-bottom: 10px;
         }
         h2 {
-            color: #34495e;
+            color: #2e7d32; /* Medium-dark green */
             margin-top: 25px;
         }
         h3 {
-            color: #34495e;
+            color: #388e3c; /* Medium green */
             margin-top: 20px;
         }
         .profile-img {
@@ -37,6 +38,7 @@
             float: right;
             margin-left: 20px;
             margin-bottom: 20px;
+            border: 3px solid #c8e6c9;
         }
         .header-section {
             overflow: hidden;
@@ -47,10 +49,11 @@
         }
         img.full-width {
             width: 100%;
-            max-width: 600px;
+            max-width: 800px;
             height: auto;
             display: block;
-            margin: 20px 0;
+            margin: 20px auto;
+            border-radius: 3px;
         }
         .team-member {
             margin-bottom: 8px;
@@ -58,7 +61,7 @@
         }
         .affiliation {
             font-size: 0.9em;
-            color: #555;
+            color: #558b2f; /* Olive green */
             font-style: italic;
         }
         ul {
@@ -68,28 +71,38 @@
             margin-bottom: 5px;
         }
         a {
-            color: #3498db;
+            color: #2e7d32; /* Green links */
             text-decoration: none;
+            font-weight: 500;
         }
         a:hover {
+            color: #1b5e20;
             text-decoration: underline;
         }
         .pub-item {
             margin-bottom: 10px;
             padding-left: 15px;
-            border-left: 2px solid #eee;
+            border-left: 3px solid #c8e6c9; /* Light green border */
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #a5d6a7, transparent);
+            margin: 25px 0;
         }
     </style>
 </head>
-<body>                
+<body>
+    <div class="container">
+        
         <hr>
         
         <!-- Profile Image -->
-        <img src="images/Logo.png" alt="Raquel Costa" class="profile-img">
+        <img src="images/Logo.png" alt="EvoCoex Lab Logo" class="profile-img">
         
         <!-- Main Title -->
         <div class="header-section">
-            <h1>EvoCoex Lab</h1>
+            <h1>🌿 EvoCoex Lab</h1>
             <h2>Evolution and Coexistence Lab</h2>
             <p><strong>Raquel F. Pereira Costa, PhD</strong><br>
             Program-Specific Assistant Professor<br>
@@ -100,20 +113,16 @@
         <div class="clear"></div>
         <hr>
         
-    </div>
-</body>
-</html>
         <!-- Research Aims (Condensed) -->
-       <h2>Research Aims</h2>
-<p>Our lab investigates the dynamics of close human–animal interactions, from wild ecotourism settings to controlled zoo environments. 
-Building on fieldwork in Uganda that highlighted risks of aggression and disease transmission, we now focus on <strong><em>why</em> people seek close contact with animals</strong>, 
-using captive contexts to investigate how interaction quality (not just frequency) shapes human–animal connections.
-What do these encounters mean for visitor learning, animal welfare, and conservation engagement? 
-<strong>What does it mean for the welfare of wild and captive animals?</strong>
-Our goal is evidence-based guidelines that protect animal welfare while fostering meaningful, conservation-oriented visitor experiences. 
-Human psychological outcomes are studied as part of this bidirectional dynamic—but animal welfare remains our primary ethical and scientific commitment.</p>
+        <h2>Research Aims</h2>
+        <p>Our lab investigates the dynamics of close human–animal interactions, from wild ecotourism settings to controlled zoo environments. 
+        Building on fieldwork in Uganda that highlighted risks of aggression and disease transmission, we now focus on <strong><em>why</em> people seek close contact with animals</strong>, 
+        using captive contexts to investigate how interaction quality (not just frequency) shapes human–animal connections.
+        What do these encounters mean for visitor learning, animal welfare, and conservation engagement? 
+        <strong>What does it mean for the welfare of wild and captive animals?</strong>
+        Our goal is evidence-based guidelines that protect animal welfare while fostering meaningful, conservation-oriented visitor experiences. 
+        Human psychological outcomes are studied as part of this bidirectional dynamic—but animal welfare remains our primary ethical and scientific commitment.</p>
            
-     
         <!-- Research Interests -->
         <h2>Research Interests</h2>
         <ul>
@@ -124,10 +133,10 @@ Human psychological outcomes are studied as part of this bidirectional dynamic�
             <li>Visitor Psychology and Public Education</li>
         </ul>
 
-<!-- Lab photo -->
-<div style="text-align: center; margin: 20px 0;">
-    <img src="images/2023 Gorilla Raquel Costa.jpg" alt="Lab team at work" style="max-width: 800px; width: 100%; height: auto; display: block;">
-</div>
+        <!-- Lab photo -->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="images/2023 Gorilla Raquel Costa.jpg" alt="Lab team at work" style="max-width: 800px; width: 100%; height: auto; display: block; border-radius: 5px;">
+        </div>
         
         <!-- About Section -->
         <h2>About the Lab</h2>
@@ -140,224 +149,224 @@ Human psychological outcomes are studied as part of this bidirectional dynamic�
         
         <hr>
         
-       <!-- Team Section -->
-<h2>Our Team</h2>
+        <!-- Team Section -->
+        <h2>Our Team</h2>
 
-<h3>Principal Investigator</h3>
-<div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 15px;">
-    <img src="images/P1033625 4.jpg" alt="Raquel F. Pereira Costa" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Raquel F. P. Costa, PhD</strong><br>
-        <span class="affiliation">Graduate School of Education and Human Development, Nagoya University</span></p>
-        <p style="margin-top: 8px; font-size: 0.95em; color: #333;">
-            Raquel is a primatologist with extensive field experience across ecosystems in Portugal, Spain, Uganda, and Japan. Her work integrates behavioral ecology, animal welfare, and conservation biology. 
-            In addition to her research on nonhuman primates, she maintains a focus on human evolution and leads an Evolutionary Psychology seminar at Nagoya University. 
-            Raquel also coordinates the Scientific Section of the Movimento Mulheres pela Primatologia, an initiative dedicated to studying and advancing gender equity in science.
-        </p>
-    </div>
-</div>
+        <h3>Principal Investigator</h3>
+        <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 15px;">
+            <img src="images/P1033625 4.jpg" alt="Raquel F. Pereira Costa" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Raquel F. P. Costa, PhD</strong><br>
+                <span class="affiliation">Graduate School of Education and Human Development, Nagoya University</span></p>
+                <p style="margin-top: 8px; font-size: 0.95em; color: #333;">
+                    Raquel is a primatologist with extensive field experience across ecosystems in Portugal, Spain, Uganda, and Japan. Her work integrates behavioral ecology, animal welfare, and conservation biology. 
+                    In addition to her research on nonhuman primates, she maintains a focus on human evolution and leads an Evolutionary Psychology seminar at Nagoya University. 
+                    Raquel also coordinates the Scientific Section of the Movimento Mulheres pela Primatologia, an initiative dedicated to studying and advancing gender equity in science.
+                </p>
+            </div>
+        </div>
 
-<h3>External Collaborators</h3>
+        <h3>External Collaborators</h3>
 
-<!-- Misato Hayashi -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Misato.jpg" alt="Misato Hayashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Misato Hayashi</strong><br>
-        <span class="affiliation">Associate Professor, Chubu Gakuin University, Japan Monkey Centre</span></p>
-    </div>
-</div>
+        <!-- Misato Hayashi -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Misato.jpg" alt="Misato Hayashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Misato Hayashi</strong><br>
+                <span class="affiliation">Associate Professor, Chubu Gakuin University, Japan Monkey Centre</span></p>
+            </div>
+        </div>
 
-<!-- Rafaela Sayuri Takeshita -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Sayuri.jpg" alt="Rafaela Sayuri Takeshita" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Rafaela Sayuri Takeshita</strong><br>
-        <span class="affiliation">Associate Professor, Kent State University</span></p>
-    </div>
-</div>
+        <!-- Rafaela Sayuri Takeshita -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Sayuri.jpg" alt="Rafaela Sayuri Takeshita" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Rafaela Sayuri Takeshita</strong><br>
+                <span class="affiliation">Associate Professor, Kent State University</span></p>
+            </div>
+        </div>
 
-<!-- Tasuku Igarashi -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Tasuku.jpg" alt="Tasuku Igarashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Tasuku Igarashi</strong><br>
-        <span class="affiliation">Professor, Nagoya University</span></p>
-    </div>
-</div>
+        <!-- Tasuku Igarashi -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Tasuku.jpg" alt="Tasuku Igarashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Tasuku Igarashi</strong><br>
+                <span class="affiliation">Professor, Nagoya University</span></p>
+            </div>
+        </div>
 
-<!-- Catherine Hobaiter -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Cat.jpg" alt="Catherine Hobaiter" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Catherine Hobaiter</strong><br>
-        <span class="affiliation">Professor, St. Andrews University</span></p>
-    </div>
-</div>
+        <!-- Catherine Hobaiter -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Cat.jpg" alt="Catherine Hobaiter" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Catherine Hobaiter</strong><br>
+                <span class="affiliation">Professor, St. Andrews University</span></p>
+            </div>
+        </div>
 
-<!-- Catia Correia-Caeiro -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Catia.jpg" alt="Catia Correia-Caeiro" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Catia Correia-Caeiro</strong><br>
-        <span class="affiliation">Research Fellow, Kyoto University</span></p>
-    </div>
-</div>
+        <!-- Catia Correia-Caeiro -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Catia.jpg" alt="Catia Correia-Caeiro" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Catia Correia-Caeiro</strong><br>
+                <span class="affiliation">Research Fellow, Kyoto University</span></p>
+            </div>
+        </div>
 
-<!-- Valeria Romano -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Valeria.jpg" alt="Valeria Romano" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Valeria Romano</strong><br>
-        <span class="affiliation">Permanent Researcher, Institut de Recherche pour le Développement</span></p>
-    </div>
-</div>
+        <!-- Valeria Romano -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Valeria.jpg" alt="Valeria Romano" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Valeria Romano</strong><br>
+                <span class="affiliation">Permanent Researcher, Institut de Recherche pour le Développement</span></p>
+            </div>
+        </div>
 
-<!-- Angela Brandão -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Angela.jpg" alt="Angela Brandão" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Angela Brandão</strong><br>
-        <span class="affiliation">Consultant, University of Lisbon</span></p>
-    </div>
-</div>
+        <!-- Angela Brandão -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Angela.jpg" alt="Angela Brandão" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Angela Brandão</strong><br>
+                <span class="affiliation">Consultant, University of Lisbon</span></p>
+            </div>
+        </div>
 
-<!-- Emilee Hart (no photo) -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <div style="width: 100px; height: 100px; border-radius: 50%; background-color: #ddd; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-        <span style="color: #999; font-size: 0.9em;">No Photo</span>
-    </div>
-    <div>
-        <p style="margin: 0;"><strong>Emilee Hart</strong><br>
-        <span class="affiliation">Assistant Professor, Drake University</span></p>
-    </div>
-</div>
+        <!-- Emilee Hart (no photo) -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <div style="width: 100px; height: 100px; border-radius: 50%; background-color: #e8f5e9; border: 2px dashed #a5d6a7; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <span style="color: #66bb6a; font-size: 0.85em; text-align: center;">No Photo</span>
+            </div>
+            <div>
+                <p style="margin: 0;"><strong>Emilee Hart</strong><br>
+                <span class="affiliation">Assistant Professor, Drake University</span></p>
+            </div>
+        </div>
 
-<h3>Students & Research Assistants</h3>
+        <h3>Students & Research Assistants</h3>
 
-<!-- Mamoru Sakura -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <!-- Changed src to match the exact case and extension of the uploaded file: Sakura.JPG -->
-    <img src="images/Sakura.JPG" alt="Mamoru Sakura" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Mamoru Sakura</strong><br>
-        <span class="affiliation">Ph.D. Student, Communication and Intergroup Psychology, Nagoya University</span><br>
-        Research focuses on communicative and psychological processes of positive contact across social groups.<br>
-        <em>Email:</em> <a href="mailto:sakura.mamoru.j5@s.mail.nagoya-u.ac.jp">sakura.mamoru.j5@s.mail.nagoya-u.ac.jp</a></p>
-    </div>
-</div>
+        <!-- Mamoru Sakura -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Sakura.JPG" alt="Mamoru Sakura" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Mamoru Sakura</strong><br>
+                <span class="affiliation">Ph.D. Student, Communication and Intergroup Psychology, Nagoya University</span><br>
+                Research focuses on communicative and psychological processes of positive contact across social groups.<br>
+                <em>Email:</em> <a href="mailto:sakura.mamoru.j5@s.mail.nagoya-u.ac.jp">sakura.mamoru.j5@s.mail.nagoya-u.ac.jp</a></p>
+            </div>
+        </div>
 
-<!-- May Eaindra Khin -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/May.jpg" alt="May Eaindra Khin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>May Eaindra Khin</strong><br>
-        <span class="affiliation">Doctoral Student, Social and Cultural Psychology, Nagoya University</span><br>
-        Research interests include cross-cultural communication and mental health stigma, with a particular focus on how cultural values and social norms shape attitudes toward mental illness.<br>
-        <em>Contact:</em> <a href="mailto:may.eaindra.khin.i0@s.mail.nagoya-u.ac.jp">may.eaindra.khin.i0@s.mail.nagoya-u.ac.jp</a></p>
-    </div>
-</div>
+        <!-- May Eaindra Khin -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/May.jpg" alt="May Eaindra Khin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>May Eaindra Khin</strong><br>
+                <span class="affiliation">Doctoral Student, Social and Cultural Psychology, Nagoya University</span><br>
+                Research interests include cross-cultural communication and mental health stigma, with a particular focus on how cultural values and social norms shape attitudes toward mental illness.<br>
+                <em>Contact:</em> <a href="mailto:may.eaindra.khin.i0@s.mail.nagoya-u.ac.jp">may.eaindra.khin.i0@s.mail.nagoya-u.ac.jp</a></p>
+            </div>
+        </div>
 
-<!-- Fitri Hanifa -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <img src="images/Hanifa.jpg" alt="Fitri Hanifa" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-    <div>
-        <p style="margin: 0;"><strong>Fitri Hanifa</strong><br>
-        <span class="affiliation">Undergraduate Student & Research Assistant, Biological Sciences, Nagoya University</span><br>
-        Collecting data at JMC>> human communication.<br>
-        <em>Email:</em> <a href="mailto:hanifa.fitri.a4@s.mail.nagoya-u.ac.jp">hanifa.fitri.a4@s.mail.nagoya-u.ac.jp</a></p>
-    </div>
-</div>
+        <!-- Fitri Hanifa -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <img src="images/Hanifa.jpg" alt="Fitri Hanifa" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <div>
+                <p style="margin: 0;"><strong>Fitri Hanifa</strong><br>
+                <span class="affiliation">Undergraduate Student & Research Assistant, Biological Sciences, Nagoya University</span><br>
+                Collecting data at JMC >> human communication.<br>
+                <em>Email:</em> <a href="mailto:hanifa.fitri.a4@s.mail.nagoya-u.ac.jp">hanifa.fitri.a4@s.mail.nagoya-u.ac.jp</a></p>
+            </div>
+        </div>
 
-<!-- Mei Yamaguchi -->
-<div style="margin-bottom: 15px;">
-    <p style="margin: 0;"><strong>Mei Yamaguchi</strong><br>
-    <span class="affiliation">Undergraduate Student & Research Assistant, Department of Education, Chubu Gakuin University</span><br>
-    Collecting data at JMC>> human communication and physiology.</p>
-</div>
+        <!-- Mei Yamaguchi -->
+        <div style="margin-bottom: 15px;">
+            <p style="margin: 0;"><strong>Mei Yamaguchi</strong><br>
+            <span class="affiliation">Undergraduate Student & Research Assistant, Department of Education, Chubu Gakuin University</span><br>
+            Collecting data at JMC >> human communication and physiology.</p>
+        </div>
 
-<!-- Samantha A. McAnany -->
-<div style="margin-bottom: 15px;">
-    <p style="margin: 0;"><strong>Samantha A. McAnany</strong><br>
-    <span class="affiliation">Undergraduate Student & Research Assistant, Kent State University</span><br>
-    Collecting data at Akron Zoo>> human & animal communication.</p>
-</div>
+        <!-- Samantha A. McAnany -->
+        <div style="margin-bottom: 15px;">
+            <p style="margin: 0;"><strong>Samantha A. McAnany</strong><br>
+            <span class="affiliation">Undergraduate Student & Research Assistant, Kent State University</span><br>
+            Collecting data at Akron Zoo >> human & animal communication.</p>
+        </div>
 
-<!-- Chie Hayashi -->
-<div style="margin-bottom: 15px;">
-    <p style="margin: 0;"><strong>Chie Hayashi</strong><br>
-    <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
-    Collecting data at JMC>> human communication and physiology.</p>
-</div>
+        <!-- Chie Hayashi -->
+        <div style="margin-bottom: 15px;">
+            <p style="margin: 0;"><strong>Chie Hayashi</strong><br>
+            <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
+            Collecting data at JMC >> human communication and physiology.</p>
+        </div>
 
-<!-- Alicia Ahlstrom -->
-<div style="margin-bottom: 15px;">
-    <p style="margin: 0;"><strong>Alicia Ahlstrom</strong><br>
-    <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
-    Collecting data at JMC>> human communication and physiology.</p>
-</div>
+        <!-- Alicia Ahlstrom -->
+        <div style="margin-bottom: 15px;">
+            <p style="margin: 0;"><strong>Alicia Ahlstrom</strong><br>
+            <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
+            Collecting data at JMC >> human communication and physiology.</p>
+        </div>
+
         <hr>
 
-<!-- Mulheres pela Primatologia -->
-<h3>Mulheres pela Primatologia (Women for Primatology)</h3>
-<p><em>Coming soon!</em></p>
-<p>Raquel coordinates the Scientific Section of <strong>Movimento Mulheres pela Primatologia</strong>, an initiative dedicated to studying and advancing gender equity in primatology and science more broadly. 
-    Upcoming activities include workshops, networking events, and research on gender disparities in the field.</p>
+        <!-- Mulheres pela Primatologia -->
+        <h3>🌸 Mulheres pela Primatologia (Women for Primatology)</h3>
+        <p><em>Coming soon!</em></p>
+        <p>Raquel coordinates the Scientific Section of <strong>Movimento Mulheres pela Primatologia</strong>, an initiative dedicated to studying and advancing gender equity in primatology and science more broadly. 
+            Upcoming activities include workshops, networking events, and research on gender disparities in the field.</p>
 
-<hr>
+        <hr>
 
         <!-- Sci Comm Events -->
-        <h3>Sci Comm Events!</h3>
-        <li><strong>June 2026:</strong> Raquel gave a talk in JMC about "A Shared Crisis: The History of Ebola in Humans and Gorillas, and the Current Emergency in the Democratic Republic of the Congo and Uganda". 
-            Participants then donated 15000 yens to Gorilla Doctors!</li>
+        <h3>📢 Sci Comm Events!</h3>
+        <ul>
+            <li><strong>June 2026:</strong> Raquel gave a talk at JMC about "A Shared Crisis: The History of Ebola in Humans and Gorillas, and the Current Emergency in the Democratic Republic of the Congo and Uganda". 
+                Participants then donated ¥15,000 to Gorilla Doctors!</li>
+        </ul>
 
-       <hr>
+        <hr>
 
-<!-- Join Our Team Box -->
-<div style="background:#e8f4f8; padding:15px; border-left:4px solid #3498db; margin:20px 0;">
-    <h3>🔬 Join Our Team</h3>
-    <p>We welcome motivated students and research assistants interested in human-animal interaction research. No prior experience required—just curiosity and commitment!</p>
-    <p><strong>Current openings:</strong> Part-time RAs for zoo-based data collection (Japanese fluency required).</p>
-    <p>📧 Contact: see section below</p>
-</div>
+        <!-- Join Our Team Box - GREEN VERSION -->
+        <div style="background:#e8f5e9; padding:15px; border-left:4px solid #4caf50; margin:20px 0; border-radius: 0 4px 4px 0;">
+            <h3 style="margin-top:0; color:#1b5e20;">🔬 Join Our Team</h3>
+            <p>We welcome motivated students and research assistants interested in human-animal interaction research. No prior experience required—just curiosity and commitment!</p>
+            <p><strong>Current openings:</strong> Part-time RAs for zoo-based data collection (Japanese fluency required).</p>
+            <p>📧 Contact: see section below</p>
+        </div>
 
-<hr>
+        <hr>
 
-<!-- Lab News Box -->
-<div style="background:#fff8e1; padding:15px; border-left:4px solid #f57c00; margin:20px 0;">
-    <h3>📢 Lab News</h3>
-    <ul style="margin-top: 10px; margin-bottom: 0;">
-        <li><strong>June 2026:</strong> We received the YLC Collaborative Research Grant for a new project to start soon! </li>
-        <li><strong>June 2026:</strong> Dr. Takeshita from Kent State University is visiting us at Nagoya!</li>
-        <li><strong>June 2026:</strong> Welcomed Chie Hayashi and Alicia Ahlstrom to the team!</li>
-        <li><strong>May 2026:</strong> Preliminary trials at Akron Zoo! Welcome to the team Sami!</li>
-        <li><strong>April 2026:</strong> Welcomed Sakura Mamoru and May Khin to the team!</li>
-        <li><strong>Jan 2026:</strong> Welcomed Fitri Hanifa and Mei Yamaguchi to the team!</li>
-    </ul>
-</div>
+        <!-- Lab News Box - GREEN VERSION -->
+        <div style="background:#f1f8e9; padding:15px; border-left:4px solid #66bb6a; margin:20px 0; border-radius: 0 4px 4px 0;">
+            <h3 style="margin-top:0; color:#2e7d32;">📰 Lab News</h3>
+            <ul style="margin-top: 10px; margin-bottom: 0;">
+                <li><strong>June 2026:</strong> We received the YLC Collaborative Research Grant for a new project to start soon! </li>
+                <li><strong>June 2026:</strong> Dr. Takeshita from Kent State University is visiting us at Nagoya!</li>
+                <li><strong>June 2026:</strong> Welcomed Chie Hayashi and Alicia Ahlstrom to the team!</li>
+                <li><strong>May 2026:</strong> Preliminary trials at Akron Zoo! Welcome to the team Sami!</li>
+                <li><strong>April 2026:</strong> Welcomed Sakura Mamoru and May Khin to the team!</li>
+                <li><strong>Jan 2026:</strong> Welcomed Fitri Hanifa and Mei Yamaguchi to the team!</li>
+            </ul>
+        </div>
 
-<hr>
-     </div>   
-    
-<h3>Funding</h3>
-<ul style="line-height: 1.6; margin-bottom: 15px;">
-  <li><strong>Tailor Made Grant 2026</strong> (Tokai Pathways to Global Excellence)<br>
-  <em>“Bridging Worlds: Exploring Turn-Taking Communication Between Apes and Humans to Promote Nature Conservation, One Health, and Responsible Tourism”</em></li>
-  
-  <li><strong>Sumitomo Electric Group Social Contribution Fund Academic Research Grant 2026</strong><br>
-  <em>“Promoting public education and One Health through improved human-animal interaction”</em></li>
-  
-  <li><strong>YLC Collaborative Research Grant 2026</strong><br>
-  <em>“When the zoo touches your heart: How do encounters with primates affect visitors’ physical and mental well-being?”</em></li>
-</ul>
+        <hr>
 
-    <p style="font-size:0.9em; color:#666;">The views expressed are those of the authors and do not necessarily reflect the official policy of the funding agencies.</p>
+        <h3>💚 Funding</h3>
+        <ul style="line-height: 1.6; margin-bottom: 15px;">
+          <li><strong>Tailor Made Grant 2026</strong> (Tokai Pathways to Global Excellence)<br>
+          <em>"Bridging Worlds: Exploring Turn-Taking Communication Between Apes and Humans to Promote Nature Conservation, One Health, and Responsible Tourism"</em></li>
+          
+          <li><strong>Sumitomo Electric Group Social Contribution Fund Academic Research Grant 2026</strong><br>
+          <em>"Promoting public education and One Health through improved human-animal interaction"</em></li>
+          
+          <li><strong>YLC Collaborative Research Grant 2026</strong><br>
+          <em>"When the zoo touches your heart: How do encounters with primates affect visitors' physical and mental well-being?"</em></li>
+        </ul>
 
-</div>
+        <p style="font-size:0.9em; color:#558b2f; font-style:italic;">The views expressed are those of the authors and do not necessarily reflect the official policy of the funding agencies.</p>
+
         <hr>
         
         <!-- Selected Papers -->
-        <h3>Selected Papers</h3>
+        <h3>📚 Selected Papers</h3>
         <div class="pub-item">Costa, R., Xu, S., Brandão, A., & Hayashi, M. (2025). Reconnection with nature through empathy: rewiring people and animals by assessing zoo visitors' connection to species and the need for their conservation. <em>Frontiers in Psychology</em>, 16, 1517430.</div>
         <div class="pub-item">Correia-Caeiro, C., Costa, R., Hayashi, M., Burrows, A., Pater, J., Miyabe-Nishiwaki, T., ... & Liebal, K. (2025). GorillaFACS: The Facial Action Coding System for the Gorilla spp. <em>PloS One</em>, 20(1), e0308790.</div>
         <div class="pub-item">Costa, R., Brandao, A. & Hayashi, M. (2024). The behavioral sequences of mountain gorillas under tourism pressure – insights for tourism sustainability. <em>Primates Conservation</em>, IUCN Special Group, 37: 121-133.</div>
@@ -372,10 +381,10 @@ Human psychological outcomes are studied as part of this bidirectional dynamic�
         <div class="pub-item">Costa, R. (2014). Revisão sistemática: Uma ponte entre a aprendizagem social e cultura em primatas não humanos. [Systematic Review: A bridge between social learning and culture in non-human primates]. <em>Cadernos do Geehv</em>, 3(1): 38-52.</div>
 
         <hr>
- </div>
- <!-- For Zoo Partners Box -->
-        <div style="background:#f9f9f9; padding:15px; border-radius:5px; margin:20px 0;">
-            <h3>🦁 For Zoo & Conservation Partners</h3>
+
+        <!-- For Zoo Partners Box - GREEN VERSION -->
+        <div style="background:#e8f5e9; padding:15px; border-radius:5px; margin:20px 0; border: 1px solid #c8e6c9;">
+            <h3 style="margin-top:0; color:#2e7d32;">🦁 For Zoo & Conservation Partners</h3>
             <p>Interested in evidence-based strategies to enhance visitor education while supporting animal welfare? We collaborate with zoos to:</p>
             <ul>
                 <li>Design signage that reduces miscommunication</li>
@@ -383,12 +392,12 @@ Human psychological outcomes are studied as part of this bidirectional dynamic�
                 <li>Help to improve/enhance educational materials for visitors</li>
             </ul>
             <p>📩 Reach out to discuss collaboration via the Contact section below.</p>
+        </div>
 
-    </div>
         <hr>
         
         <!-- Contact Section -->
-        <h3>Contact</h3>
+        <h3>📬 Contact</h3>
         <p>Email: <a href="mailto:pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp">pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp</a></p>
         <p>Nagoya University Institute for Advanced Research</p>
         <p>Graduate School of Education and Human Development</p>
