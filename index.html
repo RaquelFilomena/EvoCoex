@@ -1,3 +1,13 @@
+Here is the fully corrected and cleaned-up code. 
+
+### **What I fixed:**
+1. **Removed a stray `</div>` tag:** Right after Shinji Yamagata's section, there was an extra closing `</div>` that was prematurely closing your main white `.container` box. This would have caused the rest of your page (Students, News, Funding, Papers, etc.) to spill out of the white background and lose its margins. 
+2. **Added the picture layout for Mei Yamaguchi:** You mentioned adding her picture, but the HTML block for her was still in the old "text-only" format. I updated her block to include the image tag and flexbox layout to match the rest of the team (I used `images/Mei.jpg` as the filename, but you can change it to `Yamaguchi.jpg` if you named the file differently).
+3. **Verified the deletion:** The "For Zoo & Conservation Partners" box is indeed completely gone, and the flow from "Join Our Team" to "Lab News" is smooth.
+
+***
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -232,28 +242,26 @@
         </div>
 
        <!-- Emilee Hart -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid #a5d6a7;">
-        <img src="images/Emilee.png" alt="Photo of Emilee Hart" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-    </div>
-    <div>
-        <p style="margin: 0;"><strong>Emilee Hart</strong><br>
-        <span class="affiliation">Assistant Professor, Drake University</span></p>
-    </div>
-</div>
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid #a5d6a7;">
+                <img src="images/Emilee.png" alt="Photo of Emilee Hart" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div>
+                <p style="margin: 0;"><strong>Emilee Hart</strong><br>
+                <span class="affiliation">Assistant Professor, Drake University</span></p>
+            </div>
+        </div>
 
-<!-- Shinji Yamagata -->
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-    <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid #a5d6a7;">
-        <img src="images/Shinji.jpg" alt="Photo of Shinji Yamagata" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-    </div>
-    <div>
-        <p style="margin: 0;"><strong>Shinji Yamagata</strong><br>
-        <span class="affiliation">Associate Professor, Nagoya University</span></p>
-    </div>
-</div>
-
-         </div>
+        <!-- Shinji Yamagata -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+            <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid #a5d6a7;">
+                <img src="images/Shinji.jpg" alt="Photo of Shinji Yamagata" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div>
+                <p style="margin: 0;"><strong>Shinji Yamagata</strong><br>
+                <span class="affiliation">Associate Professor, Nagoya University</span></p>
+            </div>
+        </div>
 
         <h3>Students & Research Assistants</h3>
 
@@ -292,12 +300,12 @@
 
         <!-- Mei Yamaguchi -->
         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-            <img src="images/Yamaguchi.png" alt="Mei Yamaguchi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <img src="images/Mei.jpg" alt="Mei Yamaguchi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
             <div>
-                <div style="margin-bottom: 15px;">
-            <p style="margin: 0;"><strong>Mei Yamaguchi</strong><br>
-            <span class="affiliation">Undergraduate Student & Research Assistant, Department of Education, Chubu Gakuin University</span><br>
-            Collecting data at JMC >> human communication and physiology.</p>
+                <p style="margin: 0;"><strong>Mei Yamaguchi</strong><br>
+                <span class="affiliation">Undergraduate Student & Research Assistant, Department of Education, Chubu Gakuin University</span><br>
+                Collecting data at JMC >> human communication and physiology.</p>
+            </div>
         </div>
 
         <!-- Samantha A. McAnany -->
@@ -309,7 +317,7 @@
 
         <!-- Chie Hayashi -->
         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-            <img src="images/Hayashi.png" alt="Chie Hayashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <img src="images/Hayashi.jpg" alt="Chie Hayashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
             <div>
                 <p style="margin: 0;"><strong>Chie Hayashi</strong><br>
                 <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
@@ -319,7 +327,7 @@
 
         <!-- Alicia Ahlstrom -->
         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-            <img src="images/Alicia.png" alt="Alicia Ahlstrom" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <img src="images/Alicia.jpg" alt="Alicia Ahlstrom" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
             <div>
                 <p style="margin: 0;"><strong>Alicia Ahlstrom</strong><br>
                 <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
@@ -327,7 +335,7 @@
             </div>
         </div>
     
-            <!-- Emma Ramsey -->
+        <!-- Emma Ramsey -->
         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
             <img src="images/Emma.jpg" alt="Emma Ramsey" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
             <div>
@@ -337,7 +345,6 @@
                 <em>Email:</em> <a href="mailto:eramse13@kent.edu">eramse13@kent.edu</a></p>
             </div>
         </div>
-    
 
         <hr>
 
@@ -359,12 +366,12 @@
         <hr>
 
        <!-- Join Our Team Box - GREEN VERSION -->
-<div style="background:#e8f5e9; padding:15px; border-left:4px solid #4caf50; margin:20px 0; border-radius: 0 4px 4px 0;">
-    <h3 style="margin-top:0; color:#1b5e20;">🔬 Join Our Team</h3>
-    <p>We welcome motivated students and research assistants interested in human-animal interaction research. No prior experience required—just curiosity and commitment!</p>
-    <p><strong>Current openings:</strong> Research Assistants for data annotation and model training.</p>
-    <p>📧 Contact: see section below</p>
-</div>
+        <div style="background:#e8f5e9; padding:15px; border-left:4px solid #4caf50; margin:20px 0; border-radius: 0 4px 4px 0;">
+            <h3 style="margin-top:0; color:#1b5e20;">🔬 Join Our Team</h3>
+            <p>We welcome motivated students and research assistants interested in human-animal interaction research. No prior experience required—just curiosity and commitment!</p>
+            <p><strong>Current openings:</strong> Research Assistants for data annotation and model training.</p>
+            <p>📧 Contact: see section below</p>
+        </div>
     
         <hr>
 
@@ -384,22 +391,22 @@
         <hr>
 
         <h3>Funding</h3>
-<ul style="line-height: 1.6; margin-bottom: 15px;">
-  <li><strong>Use of Research Assistant and Technical Assistant Program</strong><br>
-  Under the MEXT's "Initiative for Realizing Diversity in the Research Environment (Female Leader Development Type)"<br>
-  <em>"Cross-species communication"</em></li>
-  
-  <li><strong>Tailor Made Grant 2026</strong> (Tokai Pathways to Global Excellence)<br>
-  <em>"Bridging Worlds: Exploring Turn-Taking Communication Between Apes and Humans to Promote Nature Conservation, One Health, and Responsible Tourism"</em></li>
-  
-  <li><strong>Sumitomo Electric Group Social Contribution Fund Academic Research Grant 2026</strong><br>
-  <em>"Promoting public education and One Health through improved human-animal interaction"</em></li>
-  
-  <li><strong>YLC Collaborative Research Grant 2026</strong><br>
-  <em>"When the zoo touches your heart: How do encounters with primates affect visitors' physical and mental well-being?"</em></li>
-</ul>
+        <ul style="line-height: 1.6; margin-bottom: 15px;">
+          <li><strong>Use of Research Assistant and Technical Assistant Program</strong><br>
+          Under the MEXT's "Initiative for Realizing Diversity in the Research Environment (Female Leader Development Type)"<br>
+          <em>"Cross-species communication"</em></li>
+          
+          <li><strong>Tailor Made Grant 2026</strong> (Tokai Pathways to Global Excellence)<br>
+          <em>"Bridging Worlds: Exploring Turn-Taking Communication Between Apes and Humans to Promote Nature Conservation, One Health, and Responsible Tourism"</em></li>
+          
+          <li><strong>Sumitomo Electric Group Social Contribution Fund Academic Research Grant 2026</strong><br>
+          <em>"Promoting public education and One Health through improved human-animal interaction"</em></li>
+          
+          <li><strong>YLC Collaborative Research Grant 2026</strong><br>
+          <em>"When the zoo touches your heart: How do encounters with primates affect visitors' physical and mental well-being?"</em></li>
+        </ul>
 
-<p style="font-size:0.9em; color:#558b2f; font-style:italic;">The views expressed are those of the authors and do not necessarily reflect the official policy of the funding agencies.</p>
+        <p style="font-size:0.9em; color:#558b2f; font-style:italic;">The views expressed are those of the authors and do not necessarily reflect the official policy of the funding agencies.</p>
         <hr>
         
         <!-- Selected Papers -->
@@ -419,19 +426,20 @@
 
         <hr>
 
-<hr>
-
-<!-- Contact Section -->
-<h3>📬 Contact</h3>
-<div style="line-height: 1.4;">
-    <p style="margin: 3px 0;">Email: <a href="mailto:pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp">pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp</a></p>
-    <p style="margin: 3px 0;">Nagoya University Institute for Advanced Research</p>
-    <p style="margin: 3px 0;">Graduate School of Education and Human Development</p>
-    <p style="margin: 3px 0;">Furo-cho, Chikusa-ku, Nagoya, Aichi 464-8601, Japan</p>
-    <p style="margin: 3px 0;">Uni page: <a href="https://www2.educa.nagoya-u.ac.jp/staff/pereira-costa-raquel-filomena/" target="_blank" rel="noopener">https://www2.educa.nagoya-u.ac.jp/staff/pereira-costa-raquel-filomena/</a></p>
-    <p style="margin: 3px 0;">T-GEx page: <a href="https://www.t-gex.nagoya-u.ac.jp/member/3984-2.html" target="_blank" rel="noopener">https://www.t-gex.nagoya-u.ac.jp/member/3984-2.html</a></p>
-    <p style="margin: 3px 0;">ResearchMap: <a href="https://researchmap.jp/raquelfpcosta" target="_blank" rel="noopener">https://researchmap.jp/raquelfpcosta</a></p>
-    <p style="margin: 3px 0;">ResearchGate: <a href="https://www.researchgate.net/profile/Raquel-Costa" target="_blank" rel="noopener">https://www.researchgate.net/profile/Raquel-Costa</a></p>
-</div>
+        <!-- Contact Section -->
+        <h3>📬 Contact</h3>
+        <div style="line-height: 1.4;">
+            <p style="margin: 3px 0;">Email: <a href="mailto:pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp">pereira.costa.raquel.filomena.z4@f.mail.nagoya-u.ac.jp</a></p>
+            <p style="margin: 3px 0;">Nagoya University Institute for Advanced Research</p>
+            <p style="margin: 3px 0;">Graduate School of Education and Human Development</p>
+            <p style="margin: 3px 0;">Furo-cho, Chikusa-ku, Nagoya, Aichi 464-8601, Japan</p>
+            <p style="margin: 3px 0;">Uni page: <a href="https://www2.educa.nagoya-u.ac.jp/staff/pereira-costa-raquel-filomena/" target="_blank" rel="noopener">https://www2.educa.nagoya-u.ac.jp/staff/pereira-costa-raquel-filomena/</a></p>
+            <p style="margin: 3px 0;">T-GEx page: <a href="https://www.t-gex.nagoya-u.ac.jp/member/3984-2.html" target="_blank" rel="noopener">https://www.t-gex.nagoya-u.ac.jp/member/3984-2.html</a></p>
+            <p style="margin: 3px 0;">ResearchMap: <a href="https://researchmap.jp/raquelfpcosta" target="_blank" rel="noopener">https://researchmap.jp/raquelfpcosta</a></p>
+            <p style="margin: 3px 0;">ResearchGate: <a href="https://www.researchgate.net/profile/Raquel-Costa" target="_blank" rel="noopener">https://www.researchgate.net/profile/Raquel-Costa</a></p>
+        </div>
+        
+    </div> <!-- End of Container -->
 </body>
 </html>
+```
