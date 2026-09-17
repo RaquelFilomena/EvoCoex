@@ -1,11 +1,3 @@
-Here is the fully corrected and cleaned-up code. 
-
-### **What I fixed:**
-1. **Removed a stray `</div>` tag:** Right after Shinji Yamagata's section, there was an extra closing `</div>` that was prematurely closing your main white `.container` box. This would have caused the rest of your page (Students, News, Funding, Papers, etc.) to spill out of the white background and lose its margins. 
-2. **Added the picture layout for Mei Yamaguchi:** You mentioned adding her picture, but the HTML block for her was still in the old "text-only" format. I updated her block to include the image tag and flexbox layout to match the rest of the team (I used `images/Mei.jpg` as the filename, but you can change it to `Yamaguchi.jpg` if you named the file differently).
-3. **Verified the deletion:** The "For Zoo & Conservation Partners" box is indeed completely gone, and the flow from "Join Our Team" to "Lab News" is smooth.
-
-***
 
 ```html
 <!DOCTYPE html>
@@ -300,7 +292,7 @@ Here is the fully corrected and cleaned-up code.
 
         <!-- Mei Yamaguchi -->
         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-            <img src="images/Mei.jpg" alt="Mei Yamaguchi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <img src="images/Mei.png" alt="Mei Yamaguchi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
             <div>
                 <p style="margin: 0;"><strong>Mei Yamaguchi</strong><br>
                 <span class="affiliation">Undergraduate Student & Research Assistant, Department of Education, Chubu Gakuin University</span><br>
@@ -308,16 +300,9 @@ Here is the fully corrected and cleaned-up code.
             </div>
         </div>
 
-        <!-- Samantha A. McAnany -->
-        <div style="margin-bottom: 15px;">
-            <p style="margin: 0;"><strong>Samantha A. McAnany</strong><br>
-            <span class="affiliation">Undergraduate Student & Research Assistant, Kent State University</span><br>
-            Collecting data at Akron Zoo >> human & animal communication.</p>
-        </div>
-
-        <!-- Chie Hayashi -->
+              <!-- Chie Hayashi -->
         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-            <img src="images/Hayashi.jpg" alt="Chie Hayashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <img src="images/Hayashi.png" alt="Chie Hayashi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
             <div>
                 <p style="margin: 0;"><strong>Chie Hayashi</strong><br>
                 <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
@@ -327,7 +312,7 @@ Here is the fully corrected and cleaned-up code.
 
         <!-- Alicia Ahlstrom -->
         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
-            <img src="images/Alicia.jpg" alt="Alicia Ahlstrom" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
+            <img src="images/Alicia.png" alt="Alicia Ahlstrom" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #c8e6c9;">
             <div>
                 <p style="margin: 0;"><strong>Alicia Ahlstrom</strong><br>
                 <span class="affiliation">Senior Student & Research Assistant, Nanzan University</span><br>
@@ -344,6 +329,14 @@ Here is the fully corrected and cleaned-up code.
                 Collecting data at Akron Zoo >> human-primate interactions.<br>
                 <em>Email:</em> <a href="mailto:eramse13@kent.edu">eramse13@kent.edu</a></p>
             </div>
+        </div>
+
+          <!-- Samantha A. McAnany -->
+        <div style="margin-bottom: 15px;">
+            <p style="margin: 0;"><strong>Samantha A. McAnany</strong><br>
+            <span class="affiliation">Undergraduate Student & Research Assistant, Kent State University</span><br>
+            Collecting data at Akron Zoo >> human & animal communication.</p>
+          </div>
         </div>
 
         <hr>
